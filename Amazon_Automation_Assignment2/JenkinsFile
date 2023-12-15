@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    tools{
+        gradle 'Gradle'
+    }
+
+    stages{
+        stage("Test"){
+            steps{
+                git 'https://github.com/rahulkhott/Amazon_Automation/'
+            }
+
+        }
+    }
+}
